@@ -1,0 +1,25 @@
+<script>
+	
+var daysUntilMyBirthday = 60;
+
+function whileYouWait(daysUntilMyBirthday){
+	for(var i = daysUntilMyBirthday; i >= 1; i--){
+		if(daysUntilMyBirthday === 1){
+			console.log("░H░A░P░P░Y░ B░I░R░T░H░D░A░Y░░");
+			break;
+		} else if(daysUntilMyBirthday > 30){
+			console.log(" days until my birthday. Such a long time... :(");
+			daysUntilMyBirthday--;
+		} else if(daysUntilMyBirthday >= 5 && daysUntilMyBirthday <= 30){
+			console.log(" days until my birthday. It's less than a month away!");
+			daysUntilMyBirthday--
+		} else if(daysUntilMyBirthday >= 2 && daysUntilMyBirthday <= 4){
+			console.log(" DAYS UNTIL MY BIRTHDAY!!!!!");
+			daysUntilMyBirthday--;
+		}
+	}
+}
+
+whileYouWait(daysUntilMyBirthday);
+
+</script>

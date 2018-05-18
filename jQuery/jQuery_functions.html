@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<title>jQuery Functions</title>
+
+</head>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+ </script>
+<script type="text/javascript">
+  
+$(document).ready(function(){
+  $('#button1').click(function(){
+    $('.toggle-title').toggle();
+  })
+
+
+  $('#button2').click(function(){
+    $('.fade').fadeIn();
+    $('.fade').fadeOut();
+    $('.fade').fadeIn();
+  })
+
+
+  $('#button3').click(function(){
+    $('.slide').slideUp();
+    $('.slide').slideDown();
+  })
+
+
+  $('#button4').click(function(){
+    $('.slide-toggle').slideToggle();
+  })
+  
+});
+
+</script>
+<body>
+	
+<h1 class='toggle-title'>Click the button below to toggle this message on and off!</h1>
+<input type="button" value="Toggle" id="button1">
+<p class="seperator">-----------------------------------------------------------------</p>
+
+
+<h1 class='fade'>Click the button below to fade this message in and out</h1>
+<input type="button" value="Fade In and Out" id="button2">
+<p class="seperator">-----------------------------------------------------------------</p>
+
+
+<h1 class='slide'>Click the button below to slide this message up and down</h1>
+<input type="button" value="Slide Up and Down" id="button3">
+<p class="seperator">-----------------------------------------------------------------</p>
+
+
+<h1 class='slide-toggle'>Click the button below to toggle sliding this message up and down</h1>
+<input type="button" value="Toggle Slide" id="button4">
+<p class="seperator">-----------------------------------------------------------------</p>
+
+</body>

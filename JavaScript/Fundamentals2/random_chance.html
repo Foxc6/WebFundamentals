@@ -1,0 +1,26 @@
+<script>
+"use strict";
+
+var quarters = 15;
+var correctNumber = 55;
+
+function randomChance(quarters){
+	for(quarters; quarters > 0; quarters--){
+	var number = Math.floor((Math.random() * 100) + 1);
+		if(number === correctNumber){
+			quarters = quarters + Math.floor((Math.random() * 50) + 51);
+			console.log("Jackpot! You just won " + number + "quarters! Your total number of quarters is now " + quarters);
+			break;
+		} else {
+			console.log(number + " was not the correct number. You now have " + quarters + " quarters left.");
+		}
+	}
+
+	if(quarters === 0){
+		console.log("You did not win the Jackpot. I award you no points and may God have mercy on your soul....")
+	}
+}
+
+randomChance(quarters);
+
+</script>

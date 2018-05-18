@@ -1,0 +1,40 @@
+<script>
+	
+var HOUR = 12;
+var MINUTE = 01;
+var PERIOD = "AM";
+
+function tellTime(HOUR, MINUTE, PERIOD){
+	var minutes;
+	var timeOfDay;
+	if(HOUR < 1 || HOUR > 12){
+		console.log("Please enter a valid hour of the day, (i.e. 1 - 12).");
+		return;
+	}
+
+	if(MINUTE >= 0 && MINUTE <= 14){
+		minutes = "just after ";
+	}else if(MINUTE >= 30 && MINUTE <= 60){
+		minutes = "almost ";
+		HOUR++;
+	}else{
+		console.log("Please enter a valid number of minutes, (i.e 01 - 60).");
+		return;
+	}
+
+
+	if(PERIOD === "AM"){
+		timeOfDay = " in the morning.";
+	}else if(PERIOD === "PM"){
+		timeOfDay = " in the evening."
+	}else{
+		console.log("Please enter 'AM' or 'PM' as the PERIOD!");
+		return;
+	}
+
+	console.log("It's " + minutes + HOUR + timeOfDay);
+}
+
+tellTime(HOUR, MINUTE, PERIOD);
+
+</script>

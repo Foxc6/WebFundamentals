@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	
+
+</head>
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+ </script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('img').click(function(){
+			$(this).fadeOut(1000);
+		})
+
+		$('#button').click(function(){
+			$('img').fadeIn(1000);
+		})
+	});
+  
+</script>
+<body>
+	<div class="images">
+		<img id='ninja1' src="ninja.png" width=100>
+		<img id='ninja2' src="ninja.png" width=100>
+		<img id='ninja3' src="ninja.png" width=100>
+		<img id='ninja4' src="ninja.png" width=100>
+		<div></div>
+		<img id='ninja5' src="ninja.png" width=100>
+		<img id='ninja6' src="ninja.png" width=100>
+		<img id='ninja7' src="ninja.png" width=100>
+		<img id='ninja8' src="ninja.png" width=100>
+	</div>
+
+	<input type="button" value="Restore" id="button">
+
+</body>

@@ -1,0 +1,37 @@
+<script>
+"use strict";
+
+var users = {
+ students: [ 
+     {first_name:  'Michael', last_name : 'Jordan'},
+     {first_name : 'John', last_name : 'Rosales'},
+     {first_name : 'Mark', last_name : 'Guillen'},
+     {first_name : 'KB', last_name : 'Tonel'}
+  ],
+ instructors: [
+     {first_name : 'Michael', last_name : 'Choi'},
+     {first_name : 'Martin', last_name : 'Puryear'}
+  ]
+ }
+
+function studentsAndInstructors(users){
+	var students = users.students;
+	var instructors = users.instructors;
+	console.log("Students");
+	for(var i = 0; i < students.length; i++){
+		var student = students[i]
+		var full_name_length = (student.first_name + student.last_name).length
+		console.log((i+1) + " - " + student.first_name + " " + student.last_name + " - " + full_name_length);
+	}
+
+	console.log("Instructors");
+	for(var i = 0; i < instructors.length; i++){
+		var instructor = instructors[i]
+		var full_name_length = (instructor.first_name + instructor.last_name).length
+		console.log((i+1) + " - " + instructor.first_name + " " + instructor.last_name + " - " + full_name_length);
+	}
+}
+
+studentsAndInstructors(users);
+
+</script>

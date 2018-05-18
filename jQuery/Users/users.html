@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Users</title>
+	<meta charset = "UTF-8" />
+	<link rel="stylesheet" href="style.css">
+	<script
+		src="http://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous">
+	</script>
+  	<script type="text/javascript">
+
+  		$(document).ready(function(){
+  			$('#submit-button').click(function(){
+  				$("table tr").last().after("<tr><td>" + $("#first-name").val() + "</td><td>" + $("#last-name").val() + "</td><td>" + $("#email").val() + "</td><td>" + $("#contact").val() + "</td></tr>");
+  			})
+  		});
+
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email Address</th>
+			<th>Contact#</th>
+		</tr>
+	</table>
+
+	<h1>Add User</h1>
+
+	<div class="form">
+		<div class="first-name-block">
+			<label for="first-name">First Name:</label>
+			<input type="text" id="first-name">
+		</div>
+
+		<div class="last-name-block">
+			<label for="last-name">Last Name:</label>
+			<input type="text" id="last-name">
+		</div>
+
+		<div class="email-block">
+			<label for="email">Email:</label>
+			<input type="text" id="email">
+		</div>
+
+		<div class="contact-block">
+			<label for="contact#">Contact#:</label>
+			<input type="text" id="contact">
+		</div>
+
+		<input id="submit-button" type="submit" value="Add User">
+	</div>
+	
+</body>

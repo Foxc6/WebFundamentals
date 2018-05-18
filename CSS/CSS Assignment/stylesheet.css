@@ -1,0 +1,29 @@
+#board, .yellow_square, .purple_square {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-size: 0;
+}
+
+#board {
+	width: 999px;
+	height: 999px;
+}
+
+
+
+
+.yellow_square {
+	background: yellow;
+	width: 333px;
+	height: 333px;
+	margin: 0px;
+}
+
+.purple_square {
+	background: purple;
+	width: 333px;
+	height: 333px;
+	margin: 0px;
+}

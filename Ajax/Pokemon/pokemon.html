@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+	<script
+		src="http://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous">
+	</script>
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+            for (var i = 1; i <= 152; i++) {
+                $('.pokemon-images').append("<img src='http://pokeapi.co/media/img/" + i + ".png'/>");
+            }
+        });
+
+	</script>
+</head>
+<body>
+	<div class="pokemon-images">
+	</div>
+
+</body>
